@@ -18,7 +18,7 @@ public class TestResize {
         System.out.println("After-sort:");
         for (Shape shape2 : shape){
             if(shape2 instanceof Square || shape2 instanceof Circle || shape2 instanceof Rectangle){
-                ((Resizeable) shape2).resize(Math.round(Math.random()*50));
+                shape2.resize(Math.round(Math.random()*50));
             }
             System.out.println(shape2.getArea());
         }

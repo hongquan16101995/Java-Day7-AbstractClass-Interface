@@ -2,7 +2,7 @@ package interfaceComparator;
 
 import BT_resizeable.Resizeable;
 
-public abstract class Shape {
+public abstract class Shape implements Resizeable{
     private String color;
     private boolean filled;
 
@@ -36,5 +36,10 @@ public abstract class Shape {
     @Override
     public String toString() {
         return "Shape{" + "color='" + color + '\'' + ", filled=" + filled + "}";
+    }
+
+    @Override
+    public void resize(long percent) {
+
     }
 }
